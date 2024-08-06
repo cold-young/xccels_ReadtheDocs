@@ -44,14 +44,6 @@ jobs:
           name: html-docs
           path: docs/build/html/
 
-
-
-      # - name: Add .nojekyll
-      #   run: sudo touch ./doc_build/html/.nojekyll
-
-
-
-# Deployment job
   deploy:
     environment:
       name: github-pages
@@ -62,3 +54,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with: 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/html/
