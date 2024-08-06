@@ -47,3 +47,6 @@ docs/build/
 
 # backup
 .history
+
+# 
+**/__pycache__/

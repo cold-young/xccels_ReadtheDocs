@@ -47,5 +47,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with: 
           artifact_name: documentationHTML
-          # publish_dir: docs/build/html/
 
