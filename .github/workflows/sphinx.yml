@@ -30,7 +30,7 @@ jobs:
           docs-folder: "docs/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@master
+        uses: actions/upload-pages-artifact@v4
         with:
           name: documentationHTML
           path: docs/build/html/
@@ -44,7 +44,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
         with: 
           artifact_name: documentationHTML
           # publish_dir: docs/build/html/
