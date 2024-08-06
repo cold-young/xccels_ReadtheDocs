@@ -5,7 +5,8 @@ import numpy as np
 
 SelfPPO = TypeVar("SelfPPO", bound="PPO")
 
-class PPO():
+
+class PPO:
     """
     Proximal Policy Optimization algorithm (PPO) (clip version)
 
