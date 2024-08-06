@@ -12,7 +12,7 @@ import sphinx_rtd_theme
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 # source code directory, relative to this file, for sphinx-autobuild
-sys.path.insert(0, os.path.abspath("../../.."))
+sys.path.insert(0, os.path.abspath("../.."))
 
 project = 'xccels_ReadtheDocs'
 copyright = '2024, cold-young'
